@@ -1,0 +1,44 @@
+@import '../colors.css';
+
+.items {
+  .title {
+    font-size: 27px;
+  }
+
+  .row {
+    display: flex;
+    font-size: 14px;
+  }
+
+  .description {
+    outline: 1px solid var(--color-concrete);
+    padding: 10px 15px;
+    width: 80%;
+    display: flex;
+    margin-bottom: 1px;
+    align-items: center;
+  }
+
+  .id {
+    outline: 1px solid var(--color-concrete);
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+  }
+
+  .column {
+    width: 10%;
+  }
+
+  .link {
+    border: 1px solid var(--color-concrete);
+    padding: 10px 15px;
+  }
+
+  .buttons {
+    width: 88px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,68 @@
+@import "../colors.css";
+
+.popup {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 100%, 0.75);
+
+  .container {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 1px 2px 0 rgba(0, 0, 0, 0.04),
+      0 2px 6px 0 rgba(0, 0, 0, 0.04);
+    width: 90%;
+    max-width: 480px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+
+    .close {
+      border-radius: 4px;
+      transition: all 0.1s ease-in-out;
+      line-height: 30px;
+      display: inline-block;
+      border: 1px solid var(--color-scarlet);
+      color: var(--color-scarlet);
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 22px;
+      height: 32px;
+      cursor: pointer;
+
+      &:hover {
+        background: var(--color-scarlet);
+      }
+    }
+  }
+
+  .content {
+    padding: 15px 0;
+  }
+
+  .error {
+    height: 19px;
+    font-size: 12px;
+    color: var(--color-scarlet);
+    margin-bottom: 10px;
+  }
+
+  .input {
+    border-radius: 4px;
+    display: block;
+    line-height: 30px;
+    border: 1px solid var(--color-concrete);
+    background-color: var(--color-white);
+    padding: 0 10px;
+    width: 300px;
+  }
+
+  .title {
+    color: var(--color-cod-gray);
+    margin-bottom: 5px;
+  }
+}
