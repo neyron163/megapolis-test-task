@@ -4,4 +4,7 @@
 ### How is it looking?
 ![](https://github.com/neyron163/megapolis-test-task/blob/master/image.png)
 
-made by Neyron
+### Animation
+![](https://github.com/neyron163/megapolis-test-task/blob/master/animation.gif)
+
+made by Neyron 07.07.2019

@@ -55,6 +55,7 @@ export function Item({
           });
         }
       } catch (error) {
+        // TODO need to fix
         console.log(error.message);
         window.location.href = "/";
       }
@@ -70,10 +71,8 @@ export function Item({
         <Header>
           <div className={s.title}>Задача № {item.id}</div>
           <Button onClick={() => onDelete(setData, items, match, history)}>
-            <span>
-              Удалить
-              <i className="fas fa-trash-alt" />
-            </span>
+            <span className={s.del}>Удалить</span>
+            <i className="fas fa-trash-alt" />
           </Button>
         </Header>
         <div>Краткое описание</div>
