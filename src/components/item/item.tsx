@@ -46,10 +46,11 @@ export function Item({
         if (success && item) {
           history.push("/");
           setData({
-            data: items.map((element: ItemsType) =>
-              element.title === item.title
-                ? { id: element.id, title: value }
-                : element
+            data: items.map(
+                (element: ItemsType): ItemsType =>
+                    element.id === Number(id)
+                        ? { id: element.id, title: value }
+                        : element
             ),
             success
           });

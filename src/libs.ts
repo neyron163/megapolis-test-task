@@ -3,7 +3,8 @@ import axios from "axios";
 import { DataType, ItemsType } from "./types";
 import { History } from "history";
 
-export const url = "https://test.megapolis-it.ru/api/list/";
+// export const url = "https://test.megapolis-it.ru/api/list/";
+export const url = "/api/list/";
 
 export function onDelete(
   setData: (data: DataType) => void,
